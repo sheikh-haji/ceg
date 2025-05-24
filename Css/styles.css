@@ -1,0 +1,480 @@
+#title{
+  background-color: #6aa84f;
+    /* background-color: #ff4c68; */
+    /* background-color: #2b78e4; */
+    /* color:#fff; */
+
+}
+
+
+#myh {
+  color: #EEE;
+  padding-top: 15%;
+  font-family: 'Coiny', cursive;
+  padding-left: 22%;
+
+  color:black;
+  font-size: 2.4rem;
+-webkit-animation: bounce .4s ease infinite alternate;
+}
+#myd {
+  
+
+-webkit-animation: bounce .4s ease infinite alternate;
+}
+@-webkit-keyframes bounce {
+  0% {
+      text-shadow:
+                  0 5px 0 #ccc,
+                  0 2px 3px rgba(0, 0, 0, 1);  
+  }
+  100% {
+    transform:translateY(-20px);
+    text-shadow:  0 50px 0 #black,
+                  0 0px 20px rgba(0, 0, 0, .8);
+  }
+}
+
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.1);
+  }
+}
+
+#pulse-animation {
+  
+ 
+  color: #EEE;
+  padding-top: 15%;
+  font-family: 'Coiny', cursive;
+  padding-left: 22%;
+
+  color:black;
+  font-size: 2.4rem;
+  -webkit-animation: pulse 0.8s ease-in-out infinite alternate;
+  animation: pulse 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(30px);
+  }
+}
+
+#slide-animation {
+
+  color: #EEE;
+  padding-top: 15%;
+  font-family: 'Coiny', cursive;
+  padding-left: 22%;
+
+  color:black;
+  font-size: 2.4rem;
+  -webkit-animation: slide 0.5s ease infinite alternate;
+  animation: slide 0.5s ease infinite alternate;
+}
+@keyframes fade {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0.3;
+  }
+}
+
+#fade-animation {
+  color: #EEE;
+  padding-top: 15%;
+  font-family: 'Coiny', cursive;
+  padding-left: 22%;
+
+  color:black;
+  font-size: 2.4rem;
+  -webkit-animation: fade 1.2s ease-in-out infinite alternate;
+  animation: fade 1.2s ease-in-out infinite alternate;
+}
+@keyframes scaleUpDown {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.2);
+  }
+}
+#changing-text {
+  display: inline-block;
+  min-width: 300px; /* adjust based on your longest phrase */
+  white-space: nowrap;
+   min-height: 1.2em; /* roughly the height of one line of text */
+  line-height: 1.2;
+}
+
+#scale-animation {
+  padding-top: 5%;
+  font-family: 'Coiny', cursive;
+  padding-left: 22%;
+
+  color:black;
+  font-size: 2.4rem;
+  -webkit-animation: scaleUpDown 0.6s ease infinite alternate;
+  animation: scaleUpDown 0.6s ease infinite alternate;
+}
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(15deg);
+  }
+}
+
+#rotate-animation {
+  padding-top: 15%;
+  font-family: 'Coiny', cursive;
+  padding-left: 22%;
+
+  color:black;
+  font-size: 2.4rem;
+  -webkit-animation: rotate 0.6s ease infinite alternate;
+  animation: rotate 0.6s ease infinite alternate;
+}
+.mapboxgl-popup {
+  max-width: 200px;
+}
+@keyframes wobble {
+  0% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(5deg);
+  }
+  50% {
+      transform: rotate(-5deg);
+  }
+  75% {
+      transform: rotate(3deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+#wobble-animation {
+  padding-top: 15%;
+  font-family: 'Coiny', cursive;
+  padding-left: 22%;
+
+  color:black;
+  font-size: 2.4rem;
+  -webkit-animation: wobble 1s ease infinite alternate;
+  animation: wobble 1s ease infinite alternate;
+}
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.marker {
+  background-image: url('../images/kinaxis.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media only screen and (min-width: 120px) and (max-width: 991px) {
+    .my_container{
+
+      padding-bottom: 400px !important; 
+
+    }
+  
+}
+#footer{
+  position: absolute;
+    background-color: white;
+    color:black;
+    font-family: Pacifico;
+    text-align: center;
+    padding: 0% 5%;
+    /* margin: 15% 0%; */
+    /* height: 200px; */
+    /* height: 10%; */
+    width: 100%;
+}
+
+h1{
+  font-family: "Pacifico";
+  font-size:2.5rem;
+  font-weight:800;
+  line-height: 1;
+
+}
+/* navbar */
+.navbar-brand{
+  font-family:"Pacifico" ;
+  font-size: 2.5rem ;
+
+}
+
+.navbar{
+  /* padding-bottom: 0.5rem; */
+}
+
+
+.nav-item{
+  font-family:"Source Sans Pro";
+  font-size: 1.2rem;
+  padding:0 5px;
+}
+.container-fluid{
+  padding: 3% 15%;
+}
+.title-image{
+  width:70%;
+  height:100%;
+}
+.temp{
+  font-family: "Source Sans Pro";
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.temp2{
+  font-family: "Pacifico";
+  font-size: 1.0rem;
+  text-align: right;
+  margin-right: 1rem;
+}
+.temp3{
+  font-family: "Pacifico";
+  font-size: 1.4rem;
+  text-align: left;
+  margin-right: 1rem;
+}
+.temp4{
+  font-family: "Pacifico";
+  font-size: 1.8rem;
+  color: white;
+  padding-left: 30%;
+  padding-top: 5%;
+
+}
+
+#skills{
+  padding: 5% 3%;
+}
+#hobbies{
+  background-color: #6aa84f;
+    /* background-color: #ff4c68; */
+    /* background-color: #2b78e4; */
+    /* color:#fff; */
+    text-align: center;
+    padding: 2%;
+
+
+}
+#education{
+  background-color: #6aa84f;
+    
+
+
+}
+.temp5{
+  font-family: "Pacifico";
+  font-size: 2rem;
+  font-weight: 800;
+  color: black;
+
+
+
+}
+.temp6{
+  font-family: "Pacifico";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: white;
+  padding: 0% 5%;
+
+}
+.carousel-inner{
+/* margin:inherit; */
+/* padding: inherit; */
+padding-left:33%;
+margin-top:5%;
+/* margin-bottom: 20%; */
+
+}
+.center{
+  border-radius: 100%;
+  width:50%;
+  text-align: center;
+
+}
+#logo{
+  text-align: center;
+  background-color: #6aa84f;
+
+}
+.logo-image{
+  width:30%;
+  height:7%;
+margin:0% 2%;
+}
+/* certificate */
+/* build your own custom Bootstrap theme:
+   https://themestr.app
+*/
+.temp8{
+    padding:4%;
+    text-align:center;
+
+}
+
+#certificate{
+    text-align:center;
+}
+.temp7{
+  font-family: "Pacifico";
+  font-size:2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom:3%;
+  text-align:center;
+}
+.portfolio-item{
+    margin-bottom:30px;
+    text-align:center;
+}
+p{
+  font-family:"Source Sans Pro";
+}
+a{
+  color:black;
+    font-family:"Pacifico";
+    text-decoration: none;
+}
+.temp9{
+  font-family: "Pacifico";
+  font-size:2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom:3%;
+  text-decoration:underline;
+  text-align:center;
+}
+
+.temp8{
+    padding:4%;
+
+   text-align: left;
+}
+#project{
+    background-color:#6aa84f;
+}
+.temp10{
+    font-family:"Oswald";
+    color: white;
+    font-size: 2rem;
+}
+h1#title {
+  color: hsl(0, 0%, 0%);
+  font-size: 50px;
+  font-weight: normal;
+  font-family: pacifico;
+  cursor: pointer;
+}
+
+h1#title span {
+  transition: 0.5s ease-out;
+}
+h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+h1:hover span:nth-child(1):after {
+  content: " Ameenul";
+}
+h1:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+h2#title {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Vina Sans';  
+  font-weight:normal;
+  font-size: 2.2em;
+}
+
+/* Animation */
+h2#title {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 600px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+/* Container holding the timeline */
+.temp20 {
+  position: relative;
+  padding-left: 40px; /* Space for the vertical line */
+  border-left: 2px solid black; /* The vertical timeline - black */
+}
+
+.temp20::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: black; /* Color of the vertical line - black */
+}
+
+/* Circle at each experience point */
+.temp20 .row {
+  position: relative;
+  margin-left: 10px; /* Space for the dot and text */
+  margin-bottom: 20px; /* Adjusts space between each experience */
+}
+
+.temp20 .row::before {
+  content: '';
+  position:relative;
+  left: -115px; /* Position the circle on the vertical line */
+  top:90px;
+  width: 25px;
+  height: 25px;
+  
+  background-color: red; /* Color of the dot - red */
+  border: 2px solid black; /* Border of the dot - black */
+  border-radius: 50%; /* Makes the dot circular */
+
+  
+}
+
+/* Adjust the position of the content relative to the timeline */
+.temp20 .row {
+  padding-left: 50px; /* Push the content away from the line and dot */
+}
