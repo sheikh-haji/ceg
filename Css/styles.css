@@ -34,12 +34,54 @@
   }
 }
 
-#techSkills {
-  animation: bounce 1s ease infinite;
+ #techSkills span {
+    display: inline-block; /* Allows individual animation of each character */
+    animation: none; /* Initially no animation */
+    transform-origin: bottom; /* Ensures the bounce looks natural from the bottom */
+    animation-fill-mode: both;
+  }
+#techSkills span {
+  color: inherit;
+  visibility: visible;
+  opacity: 1;
 }
-#nontechSkills {
-  animation: bounce 1s ease infinite;
+
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-15px); /* Adjust bounce height */
+    }
+    60% {
+      transform: translateY(-7px); /* Adjust bounce height */
+    }
+  }
+  .bounce-char {
+  display: inline-block;
+  animation: none;
+  transform-origin: bottom;
+  animation-fill-mode: both; /* Keeps the final state visible */
 }
+
+#nontechSkills span {
+    display: inline-block; /* Allows individual animation of each character */
+    animation: none; /* Initially no animation */
+    transform-origin: bottom; /* Ensures the bounce looks natural from the bottom */
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-15px); /* Adjust bounce height */
+    }
+    60% {
+      transform: translateY(-7px); /* Adjust bounce height */
+    }
+  }
 #myh {
   color: #EEE;
   padding-top: 15%;
@@ -427,16 +469,16 @@ h1#title {
 h1#title span {
   transition: 0.5s ease-out;
 }
-h1:hover span:nth-child(1) {
+h1#title:hover span:nth-child(1) {
   margin-right: 5px;
 }
-h1:hover span:nth-child(1):after {
+h1#title:hover span:nth-child(1):after {
   content: " Ameenul";
 }
-h1:hover span:nth-child(2) {
+h1#title:hover span:nth-child(2) {
   margin-left: 30px;
 }
-h1:hover span {
+h1#title:hover span {
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }

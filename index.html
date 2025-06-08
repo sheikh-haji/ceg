@@ -57,6 +57,61 @@
 //   $('.carousel').carousel({
 //   interval: 1000
 // })
+document.addEventListener('DOMContentLoaded', () => {
+  const characters = document.querySelectorAll('#techSkills .bounce-char');
+
+  const animationDuration = 1500;
+  const delayBetweenCharacters = 250;
+  const sequenceDelay = 1500;
+
+  function animateCharacters() {
+    characters.forEach((char, index) => {
+      char.style.animation = 'none';
+      void char.offsetWidth;
+
+      setTimeout(() => {
+        char.style.animation = `bounce ${animationDuration / 1000}s ease`;
+      }, index * delayBetweenCharacters);
+    });
+
+    const totalSequenceTime = (characters.length * delayBetweenCharacters) + animationDuration;
+
+    setTimeout(() => {
+      animateCharacters();
+    }, totalSequenceTime + sequenceDelay);
+  }
+
+  animateCharacters();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const characters = document.querySelectorAll('#nontechSkills .bounce-char');
+
+  const animationDuration = 1500;
+  const delayBetweenCharacters = 250;
+  const sequenceDelay = 1500;
+
+  function animateCharacters() {
+    characters.forEach((char, index) => {
+      char.style.animation = 'none';
+      void char.offsetWidth;
+
+      setTimeout(() => {
+        char.style.animation = `bounce ${animationDuration / 1000}s ease`;
+      }, index * delayBetweenCharacters);
+    });
+
+    const totalSequenceTime = (characters.length * delayBetweenCharacters) + animationDuration;
+
+    setTimeout(() => {
+      animateCharacters();
+    }, totalSequenceTime + sequenceDelay);
+  }
+
+  animateCharacters();
+});
+
+
 function func(e){
 $(e.currentTarget).trigger("blur");
 }
@@ -316,7 +371,11 @@ typeWord(); // Start the animation
 
         </div> -->
         <div class="col-lg-6 col-md-12 pe-3" style="margin-bottom: 30px;">
-  <h1 id="techSkills" style="font-family: Vina Sans;">Tech Skills</h1>
+ <h1 id="techSkills" style="font-family: Vina Sans;">
+  <span class="bounce-char">T</span><span class="bounce-char">e</span><span class="bounce-char">c</span><span class="bounce-char">h</span><span class="bounce-char">&nbsp;</span>
+  <span class="bounce-char">S</span><span class="bounce-char">k</span><span class="bounce-char">i</span><span class="bounce-char">l</span><span class="bounce-char">l</span><span class="bounce-char">s</span>
+</h1>
+
 
   <!-- Web Development -->
   <div class="my-3 ms-2 me-2 pe-2">
@@ -381,7 +440,12 @@ typeWord(); // Start the animation
 
         <div class="col-lg-6 col-md-12  mt-3" style=" margin-bottom:30px;">
           <!-- <h1 style="font-family:Vina Sans;font-weight:normal;" >Non Tech Skills</h1> -->
-          <h1 id="nontechSkills" style="font-family:Vina Sans;">Non Tech Skills</h1>
+         <h1 id="nontechSkills" style="font-family: Vina Sans;">
+  <span class="bounce-char">N</span><span class="bounce-char">o</span><span class="bounce-char">n</span><span class="bounce-char">-</span>
+  <span class="bounce-char">T</span><span class="bounce-char">e</span><span class="bounce-char">c</span><span class="bounce-char">h</span><span class="bounce-char">&nbsp;</span>
+  <span class="bounce-char">S</span><span class="bounce-char">k</span><span class="bounce-char">i</span><span class="bounce-char">l</span><span class="bounce-char">l</span><span class="bounce-char">s</span>
+</h1>
+
           <div class="my-3 mx-5">
             <label class="temp3" ><i class="fa-solid fa-feather-pointed "></i><b>Team Player-</b>conducted events in university and department fest</label>
           </div>
