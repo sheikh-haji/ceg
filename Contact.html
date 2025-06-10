@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+ <link rel="icon" type="image/x-icon" href="./Images/icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yZDK7Z8wHlqLU0qwQAPVCrY7Glv9wPY/1a0j5zStlEfK6M9SCQX4S1A6O0FtXUnogpGfxu7ehRU3gz4p5WUJ1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <script src="https://kit.fontawesome.com/1e2982f3b2.js" crossorigin="anonymous"></script>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #6aa84f;
+      color: black;
+    }
+   
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+      gap: 30px;
+    }
+
+    .left, .right {
+      flex: 1 1 45%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+   .social-icons a {
+  margin-right: 15px;
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+}
+
+
+    .info {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+ 
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+    }
+    .avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid black;
+  margin-bottom: 20px;
+}
+  </style>
+  </head>
+<body>
+
+  <div class="container">
+    <div class="contact-section">
+      <!-- Left side -->
+      <div class="left">
+        <h1>Contact Me</h1>
+        <img src="./Images/icons.png" alt="My Avatar" class="avatar">
+
+        <p>Feel free to contact me for questions, collaborations, or just a friendly chat.</p>
+         <div class="social-icons">
+    <a href="https://www.instagram.com/sheikhhaji18/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com/in/sheikhhaji" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/sheikh-haji/" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+      </div>
+
+      <!-- Right side -->
+      <div class="right">
+        <div class="info">
+          <strong>Address:</strong><br>
+          Plot no-39A, 6th Street Sudharson Nagar,<br>
+          Madambakkam, Tambaram, Chennai - 600126<br>
+          Tamil Nadu, India
+        </div>
+        <div class="info">
+          <strong>Phone:</strong> 9367587134
+        </div>
+        <div class="info">
+          <strong>Email:</strong> sheikhhaji18@gmail.com
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps?q=Plot%20no-39A%2C%206th%20Street%20Sudharson%20Nagar%2C%20Madambakkam%2C%20Tambaram%2C%20Chennai%20600126&output=embed"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
