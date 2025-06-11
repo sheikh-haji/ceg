@@ -13,6 +13,9 @@
 </script>
   <meta charset="utf-8">
   <title>Sheikh Haji's Portfolio</title>
+<!-- In the <head> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+ <!-- Before </body> -->
 
   <!-- Font Awesome -->
   <!-- 1e2982f3b2 -->
@@ -161,10 +164,16 @@ window.setInterval(function(){
 
 </script>
 <style>
-  .card:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+ 
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
   .word-animation {
       display: inline-block;
     font-size: 2.2rem;
@@ -274,17 +283,8 @@ function deleteWord() {
 
 typeWord(); // Start the animation
 </script>
-          <!-- <h3 class="temp4" style="font-family:Vina Sans;font-weight:normal;">My Profile</h3> -->
-          <!-- <div class="badge-base LI-profile-badge " data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="sheikhhaji" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/sheikhhaji?trk=profile-badge"></a></div> -->
-              
           <div class="my_animation">
-            <!-- <p id="myh">My Profile! </p>
-            <p id="pulse-animation">My Profile! </p>
-            <p id="slide-animation">My Profile! </p>
-            <p id="fade-animation">My Profile! </p> -->
             <p id="scale-animation">My Profile! </p>
-            <!-- <p id="rotate-animation">My Profile! </p>
-            <p id="wobble-animation">My Profile! </p> -->
         </div>
 
           
@@ -298,13 +298,7 @@ typeWord(); // Start the animation
         <div class='col-lg-6 col-md-12 '>
 
 
-          <!-- <img class="title-image ms-5 ps-5" height="auto"  src="./Images/sheikh10.png" alt="iphone-mockup"> -->
-          
-          <!-- <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
-          <div class="figure">
-            <img class="Sirv image-main" src="hmages/sheikh4.png" data-src="./Images/sheikh4.png">
-            <img class="Sirv image-hover" data-src="./Images/sheikh11.png">
-          </div> -->
+
           <img id="my-img" src="./Images/sheikh11.png" height="auto" width="70%"  />
         </div>
 
@@ -337,7 +331,7 @@ typeWord(); // Start the animation
       <div class="row row-cols-1 row-cols-md-2 g-3 mt-3">
         <!-- Language -->
         <div class="col">
-          <div class="card shadow-lg h-100 text-center">
+          <div class="card shadow-lg h-100 text-center" data-aos="flip-left" data-aos-duration="2000">
             <div class="card-body">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="img-fluid mb-2" style="width: 40px;">
               <h5 class="card-title">Languages</h5>
@@ -349,7 +343,7 @@ typeWord(); // Start the animation
 
         <!-- Flutter -->
         <div class="col">
-          <div class="card shadow-lg h-100 text-center">
+          <div class="card shadow-lg h-100 text-center" data-aos="flip-left" data-aos-duration="2000">
             <div class="card-body">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" class="img-fluid mb-2" style="width: 40px;">
               <h5 class="card-title">Mobile Dev</h5>
@@ -361,7 +355,7 @@ typeWord(); // Start the animation
 
         <!-- Web Dev -->
         <div class="col">
-          <div class="card shadow-lg h-100 text-center">
+          <div class="card shadow-lg h-100 text-center" data-aos="flip-left" data-aos-duration="2000">
             <div class="card-body">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="img-fluid mb-2" style="width: 40px;">
               <h5 class="card-title">Web Dev</h5>
@@ -373,7 +367,7 @@ typeWord(); // Start the animation
 
         <!-- ML -->
         <div class="col">
-          <div class="card shadow-lg h-100 text-center">
+          <div class="card shadow-lg h-100 text-center" data-aos="flip-left" data-aos-duration="2000">
             <div class="card-body">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="img-fluid mb-2" style="width: 40px;">
               <h5 class="card-title">ML & DL</h5>
@@ -396,7 +390,7 @@ typeWord(); // Start the animation
       <div class="row row-cols-1 row-cols-md-2 g-3 mt-3">
         <!-- Team Player -->
         <div class="col">
-          <div class="card shadow-lg h-100 text-center">
+          <div class="card shadow-lg h-100 text-center" data-aos="flip-left" data-aos-duration="2000">
             <div class="card-body">
               <i class="fa-solid fa-people-group fa-2x mb-2 text-success"  style="width: 40px;padding:5px;"></i>
               <h5 class="card-title">Team Player</h5>
@@ -408,7 +402,7 @@ typeWord(); // Start the animation
 
         <!-- Problem Solving -->
         <div class="col">
-          <div class="card shadow-lg h-100 text-center">
+          <div class="card shadow-lg h-100 text-center" data-aos="flip-left" data-aos-duration="2000">
             <div class="card-body">
               <i class="fa-solid fa-brain fa-2x mb-2 text-warning"  style="width: 40px;padding:5px;"></i>
               <h5 class="card-title">Problem Solving</h5>
@@ -420,7 +414,7 @@ typeWord(); // Start the animation
 
         <!-- Communication -->
         <div class="col">
-          <div class="card shadow-lg h-100 text-center">
+          <div class="card shadow-lg h-100 text-center" data-aos="flip-left" data-aos-duration="2000">
             <div class="card-body">
               <i class="fa-solid fa-comments fa-2x mb-2 text-primary"  style="width: 40px;padding:5px;"></i>
               <h5 class="card-title">Communication</h5>
@@ -542,17 +536,13 @@ typeWord(); // Start the animation
 </div>
 
   </section>
-  <!-- <section id="logo">
-    <img src="/./Images/6.png" class="logo-image">
-      <img src="/./Images/7.png" class="logo-image">
-
-  </section> -->
+ 
   <section id="certificate">
 <div class="container temp8">
     <h1 class="temp7" style="font-family:Vina Sans;font-weight:normal;"> Certificates</h1>
 <div class="row text-center">
   <div class="col-lg-4 col-md-6 portfolio-item">
-    <div class="card ">
+    <div class="card" data-aos="flip-left" data-aos-duration="2000">
       <a href="https://drive.google.com/file/d/1QDi9ApsrsaPZVDpyMP8-N5nXsIharFL9/view?usp=sharing" target="_blank"><img class="card-img-top" src="./Images/cer1.jpg" height="50%" alt=""></a>
       <div class="card-body my-4">
         <h4 class="card-title">
@@ -565,7 +555,7 @@ typeWord(); // Start the animation
     </div>
   </div>
   <div class="col-lg-4 col-md-6 portfolio-item">
-    <div class="card ">
+    <div class="card " data-aos="flip-left" data-aos-duration="2000">
       <a href="https://www.udemy.com/certificate/UC-7e1cc713-d9e4-4008-bb78-0ad235cd5ffc/" target="_blank"><img class="card-img-top" src="./Images/cer6.jpg" height="50%" alt=""></a>
       <div class="card-body my-4">
         <h4 class="card-title">
@@ -578,7 +568,7 @@ typeWord(); // Start the animation
     </div>
   </div>
   <div class="col-lg-4 col-md-6 portfolio-item">
-    <div class="card ">
+    <div class="card " data-aos="flip-left" data-aos-duration="2000">
       <a href="https://courses.ictacademy.skillsnetwork.site/certificates/459913cf102f49d9a21059914c6f2878" target="_blank"><img class="card-img-top" src="./Images/certi.png" height="40%" alt=""></a>
       <div class="card-body my-4">
         <h4 class="card-title">
@@ -592,7 +582,7 @@ typeWord(); // Start the animation
   </div>
        
         <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="card h-100">
+          <div class="card h-100" data-aos="flip-left" data-aos-duration="2000">
             <a href="https://www.udemy.com/certificate/UC-f318cd2a-c48a-4e88-9ab3-77e1b028f244/" target="_blank"><img class="card-img-top" src="./Images/cer2.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
@@ -604,7 +594,7 @@ typeWord(); // Start the animation
               </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="col-lg-4 col-md-6 portfolio-item" data-aos="flip-left" data-aos-duration="2000">
           <div class="card h-100">
             <a href="https://www.udemy.com/certificate/UC-bbbe9349-f615-44b8-ba83-b2a409e8ff59/" target="_blank"><img class="card-img-top" src="./Images/cer3.jpg" alt=""></a>
             <div class="card-body">
@@ -618,7 +608,7 @@ typeWord(); // Start the animation
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="card h-100">
+          <div class="card h-100" data-aos="flip-left" data-aos-duration="2000">
             <a href="https://www.udemy.com/certificate/UC-82a8530a-68c7-4d12-baf8-36a055fcf8f2/" target="_blank"><img class="card-img-top" src="./Images/cer4.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
@@ -631,7 +621,7 @@ typeWord(); // Start the animation
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="card h-100">
+          <div class="card h-100" data-aos="flip-left" data-aos-duration="2000">
             <a href="https://online.codingblocks.com/app/certificates/CBOL-118627-ef741260" target="_blank"><img class="card-img-top" src="./Images/cer5.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title mt-5">
@@ -645,7 +635,7 @@ typeWord(); // Start the animation
         </div>
        
         <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="card ">
+          <div class="card " data-aos="flip-left" data-aos-duration="2000">
             <a href="https://www.credly.com/badges/fc1a6283-1116-46c0-8156-27c8c94a8870/linked_in?t=rtdnlj" target="_blank"><img class="card-img-top" src="./Images/certi6.jpeg" height="40%" alt=""></a>
             <div class="card-body my-4">
               <h4 class="card-title">
@@ -658,7 +648,7 @@ typeWord(); // Start the animation
           </div>
         </div>
         <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="card ">
+          <div class="card " data-aos="flip-left" data-aos-duration="2000">
             <a href="https://www.credly.com/badges/437e06b5-2a51-4e0b-a93b-649c858d3606" target="_blank"><img class="card-img-top" src="./Images/certi7.jpeg" height="40%" alt=""></a>
             <div class="card-body my-4">
               <h4 class="card-title">
@@ -894,27 +884,10 @@ typeWord(); // Start the animation
     <!-- Project 1 -->
     <div class="row temp20">
       <div class="col-md-12 ">
-        <!-- <div class="row">
-        <p style="font-family:Pacifico;font-size:1.7rem;color:black;margin: 3%0%;">CSD Trainee at Cognizant<img src="/./Images/cognizant1.png"  width="100" height="100">
-          (apr 2024-jun 2024)</p>
-          <ul>
-            <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;">CSD (Continuous Skill Development) training internship.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;">learned Python, MySQL as part of CSD training program.</li>
-           
-          </ul>
-        </div> -->
+        
         <div class="row">
-        <!-- <p style="font-family:Pacifico;font-size:1.7rem;color:black;margin: 3%0%;">Internship at kinaxis:C++ developer Intern<img src="./Images/kinaxis.png"  width="100" height="100">
-          (feb 2023-jun 2023)</p>
-        <ul>
-          <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;">Handled and resolved client queries related to the analytics section of the
-            RapidResponse app as part of the L3 escalation team.</li>
-          <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;">Debugging the codebase,troubleshooting the logs,resolving tickets from jira.</li>
-          <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;">Learned about rapid response software gained certification of author and contributor.</li>
-          <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;"><a href="https://drive.google.com/file/d/1kVGm9jwiSZ18aotjZjuoyiYmlfCCoH-c/view?usp=sharing" style="font-family:Source Sans Pro;font-size:1.2rem;color:black;text-decoration: underline;" target="_blank"><b>Experience Letter</b></a></li>
-             
-        </ul> -->
-        <div class="card my-4 shadow rounded" style="font-family: 'Source Sans Pro', sans-serif;">
+       
+        <div class="card my-4 shadow rounded" style="font-family: 'Source Sans Pro', sans-serif;" data-aos="flip-up" data-aos-duration="2000">
   <div class="card-header bg-dark text-white">
     <h4 class="mb-0" style="font-family: 'Pacifico', cursive; font-size: 1.7rem;">
       Internship at Kinaxis: C++ Developer Intern
@@ -937,41 +910,13 @@ typeWord(); // Start the animation
     </div>
     <h1 class="temp9" style="font-family:Vina Sans;font-weight:normal;">Education</h1>
       <div class="row temp20">
-        <!-- <div class="col-md-12 ">
-          <div class="row ">
-          <p style="font-family:Pacifico;font-size:1.7rem;color:black;margin: 3%0%;">B.Tech in Information Technology<img src="./Images/ceg.png"  width="100" height="100">(jun 2019-jun 2023)</p>
-            <ul>
-              <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;">Studied in College oF Engineering, Guindy, Anna University Chennai </li>
-              <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;">CGPA - 8.76 (First Class with Distinction)</li>
-              <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;">Organised Events in ITRix, Kurushekshra, Techofest.</li>
-             
-            </ul>
-          </div>
-          <div class="row ">
-          <p style="font-family:Pacifico;font-size:1.7rem;color:black;margin: 3%0%;">12th Standard <img src="./Images/kvs.jpg"  width="100" height="100">
-            (jun 2018-jun 2019)</p>
-          <ul>
-            <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;">PCM with Biology</li>
-            <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;">Percentage = 94.2%, School Second, Subject Topper in PCM</li>
-            <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;"> Studied in Kendriya Vidyalaya, Avadi, Chennai</li> 
-          </ul>
-           </div>
-           <div class="row ">
-            <p style="font-family:Pacifico;font-size:1.7rem;color:black;;margin: 3%0%;">10th Standard <img src="./Images/kvs.jpg"  width="100" height="100">
-              (jun 2016-jun 2017)</p>
-            <ul>
-              <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;">CGPA = 10, Percentage = 95%</li>
-              <li style="font-family:Source Sans Pro;font-size:1.3rem;color:black;"> Studied in Kendriya Vidyalaya, Avadi, Chennai</li> 
-            </ul>
-             </div>
-        </div>
-      </div> -->
+      
       <div class="container my-4">
  
 
     <!-- B.Tech Card -->
     <div class="row">
-      <div class="card h-100 shadow rounded">
+      <div class="card h-100 shadow rounded" data-aos="flip-up" data-aos-duration="2000">
         <div class="card-header bg-dark text-white">
           <h4 class="mb-0" style="font-family: Pacifico, cursive;">
             B.Tech in Information Technology
@@ -991,7 +936,7 @@ typeWord(); // Start the animation
 
     <!-- 12th Standard Card -->
     <div class="row">
-      <div class="card h-100 shadow rounded">
+      <div class="card h-100 shadow rounded" data-aos="flip-up" data-aos-duration="2000">
         <div class="card-header bg-dark text-white">
           <h4 class="mb-0" style="font-family: Pacifico, cursive;">
             12th Standard
@@ -1011,7 +956,7 @@ typeWord(); // Start the animation
 
     <!-- 10th Standard Card -->
     <div class="row">
-      <div class="card h-100 shadow rounded">
+      <div class="card h-100 shadow rounded" data-aos="flip-up" data-aos-duration="2000">
         <div class="card-header bg-dark text-white">
           <h4 class="mb-0" style="font-family: Pacifico, cursive;">
             10th Standard
@@ -1184,6 +1129,11 @@ console.log('A click event has occurred at ${e.lngLat}');
 
 
 <!-- </footer> -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>
