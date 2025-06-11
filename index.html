@@ -16,6 +16,8 @@
 <!-- In the <head> -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
  <!-- Before </body> -->
+ <!-- Devicon CSS for tech stack logos -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
   <!-- Font Awesome -->
   <!-- 1e2982f3b2 -->
@@ -666,204 +668,225 @@ typeWord(); // Start the animation
         </div>
 </section>
 <section id="project">
-    <div class="container temp8">
+  <div class="container temp8">
+    <h1 class="temp9" style="font-family:Vina Sans; font-weight:normal;">Projects</h1>
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="temp9" style="font-family:Vina Sans;font-weight:normal;">Projects
-      </h1>
-      <div class="row">
-        <div class="col-md-12 ">
-          <h3 class="temp10"  style="font:Oswald;">VIT Recognition of Tamil Characters in Palm Leaf Manuscripts</h3>
-          <p style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Recognize character from palm leaf which is written in palm manuscript</p>
-          <ul>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Recognized characters from palm leaf manuscripts, improving accuracy by 2.0% over baseline models with the Vision
-              Transformer (ViT) model.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Built a Python web application to identify Tamil characters, incorporating character and line segmentation techniques,
-              which reduced processing time by 5%.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Evaluated the performance of ViT, CNN, and VGG-16 models using transfer learning, leading to a 2% overall accuracy
-              increase.Merged HPLabs and UTCHD datasets to create a comprehensive training and evaluation dataset of 1,90,000 Images. </li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Tools/Library - Keras, TensorFlow, Pandas, sklearn, numpy </li>
-            </ul>
-  
-          
-            <a class="btn btn-dark me-3" href="https://drive.google.com/file/d/1mgOflyyIVbu52Qp6hHWDT3TctHBY-P6H/view?usp=sharing" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">Video Phase - 1
-             <a class="btn btn-dark me-3" href="https://drive.google.com/file/d/1ThNG4iTGx-XgDaTufIEYpL3P1Owg22_F/view?usp=sharing" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">Video Phase - 2  
-              <a class="btn btn-dark me-3" href="https://docs.google.com/presentation/d/16RJiH9pSs9ZRVMx1HY0ivbhfVsyKckyK/edit?usp=sharing&ouid=111817135641183278437&rtpof=true&sd=true" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)"> Results    
-              <a class="btn btn-dark me-3" href="https://drive.google.com/file/d/1-DTk-59CWJmUDOEMiL-wlHFNniX52v79/view?usp=sharing" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">Report 1
-                <a class="btn btn-dark me-3" href="https://drive.google.com/file/d/1lNfiRLq9I3i7aQwV4JdxVszayO0hxrhj/view?usp=sharing" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">Report 2
-            
-               <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
+    <!-- Project Card -->
+   <div class="card mb-4 bg-dark text-white border-light" data-aos="flip-down" data-aos-duration="2000">
+  <div class="card-body">
+    <h3 class="card-title" style="font-family:Oswald;">
+      VIT Recognition of Tamil Characters in Palm Leaf Manuscripts
+    </h3>
+    <p class="card-text" style="font-family:Source Sans Pro; font-size:1.2rem;">
+      Recognize character from palm leaf which is written in palm manuscript
+    </p>
+    <ul style="font-family:Source Sans Pro; font-size:1.2rem;">
+      <li>Recognized characters from palm leaf manuscripts, improving accuracy by 2.0% over baseline models with the Vision Transformer (ViT) model.</li>
+      <li>Built a Python web application to identify Tamil characters, incorporating character and line segmentation techniques, which reduced processing time by 5%.</li>
+      <li>Evaluated the performance of ViT, CNN, and VGG-16 models using transfer learning, leading to a 2% overall accuracy increase. Merged HPLabs and UTCHD datasets to create a comprehensive training and evaluation dataset of 1,90,000 Images.</li>
+      <li>Tools/Library - Keras, TensorFlow, Pandas, sklearn, numpy</li>
+    </ul>
 
-        </div>
-
-      </div>
-      <hr /> 
-      <!-- Project 1 -->
-      <div class="row">
-        <div class="col-md-12 ">
-          <h3 class="temp10" style="font:Oswald;">Resume Assistant: Intelligent Chatbot for Resume Queries</h3>
-          <p style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Resume-Based Chatbot with Custom Question Answering: GPT vs Palm vs T5 vs BERT Performance Evaluation</p>
-          <ul>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Created a chatbot that answers resume-related questions through a web application.</li>
-           
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Assessed custom question-answering capabilities, where GPT produced more natural responses than BERT’s answers,
-              with GPT demonstrating a 10% improvement in response relevance than other model.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Tools/Library - LLM/Transformers,Streamlit,LangChain, embeddings, vector databases,semantic search, PDFPlumber.</li>
-            </ul>
-          <a class="btn btn-dark me-3" href="https://github.com/sheikh-haji/RTS/" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">  CODE Open AI
-            <a class="btn btn-dark me-3" href="https://drive.google.com/file/d/1N9sBTF1lVRhSgz36j7xLWuLh8w0S73SP/view?usp=sharing" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">  Video BERT
-       
-              <a class="btn btn-dark me-3" href="https://drive.google.com/file/d/1zRBhxMaIocnPlmNRjEHQ9pNa39L88Pgt/view?usp=sharing" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">  Video Open AI
-          
-              <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-          <!-- <a class="btn btn-dark" href="https://github.com/sheikh-haji/Weather-App-flutter" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">Flutter App
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a> -->
-        </div>
-      </div>
-      <hr/>
-      <div class="row">
-        <div class="col-md-12 ">
-          <h3 class="temp10" style="font:Oswald;">React projects:To do list and Blog app|🔴Live</h3>
-          <p style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Learned concepts of react such componentss,react hooks, how to create custom react hooks, routing,react context</p>
-          <ul>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">To dolist app is a simple to do list app to check our daily activity ,there is no reloading in the app due to use of react hooks
-              live deployment.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Blog you create a post, read the post, edit the post basically like blog website
-              in generating relevant responses.</li>
-            
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Tools/Library - React,Mock API, Fake API server.</li>
-            </ul>
-          <a class="btn btn-dark me-3" href="https://to-do-list-react-xi-fawn.vercel.app/" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">  Todolist
-            <a class="btn btn-dark me-3" href="https://react-social-media-app-ten.vercel.app/" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)" onclick="func(event)"> Blog Website
-       
-              
-              <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-          <!-- <a class="btn btn-dark" href="https://github.com/sheikh-haji/Weather-App-flutter" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">Flutter App
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a> -->
-        </div>
-      </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-12 ">
-          <h3 class="temp10"  style="font:Oswald;">Smart Healthcare: Disease Classification and Hospital Locator Web Application</h3>
-          <p style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">To classify disease based on the symptoms given by the
-            user and find the nearest hospital from the user's location.</p>
-          <ul>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Designed a web application that classifies diseases based on user-provided symptoms using Naive Bayes, Decision Tree,
-              and Support Vector Machine models, achieving an accuracy of 95.6% with the most accurate model selected for
-              deployment.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Integrated OLA Maps, OpenWeather, and Places APIs to locate the nearest hospital based on user location, improving
-              user accessibility to healthcare services by 5%.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Provided remedies for classified diseases, storing them in a NoSQL database, which efficiently managed 42 records for
-              quick retrieval.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Tools/Library- Geolocator API, Flask, sklearn, OLA Maps, OpenWeather API, NoSQL Database</li>
-              
-          </ul>
-          <a class="btn btn-dark me-3" href="https://github.com/sheikh-haji/Disease-Classification-Using-ML-Model" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">  View Project
-            <a class="btn btn-dark me-3" href="http://mlandlocation.work.gd/" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">  Webapp
-            
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-
-        </div>
-      </div>
-
-      <hr />
-      <!-- Project 1 -->
-      <div class="row">
-        <div class="col-md-12 ">
-          <h3 class="temp10"  style="font:Oswald;">Real-Time Weather Tracker: Cross-Platform Application Using Flutter|🔴Live</h3>
-          <p style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">To find weather of any city from OpenWeatherMap API, developed for both mobile and web.</p>
-          <ul>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Developed a cross-platform application using Flutter that fetches real-time weather data through the
-              OpenWeatherMap API, allowing users to retrieve weather information based on their current or custom
-              locations via the Mapbox API.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">
-              Implemented asynchronous programming techniques to ensure a seamless user experience, reducing
-              data retrieval time by 2 seconds on average.</li>
-              <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Tools/Library: Flutter, OpenWeatherMap API, Mapbox API, Asynchronous Programming.</li>
-            </ul>
-          <a class="btn btn-dark me-3" href="https://weather-x9uf.onrender.com" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">Web App
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-          <a class="btn btn-dark" href="https://github.com/sheikh-haji/Weather-App-flutter" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">Flutter App
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
-      </div>
-      <hr />
-      <!-- /.row -->
-      <div class="row">
-        <div class="col-md-12 ">
-          <h3 class="temp10"  style="font:Oswald;">To-Do List App with Secure Authentication|🔴Live</h3>
-          <p style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">The goal of this project was to make a simple to do list web app and flutter app and learn about databases and security.</p>
-          <ul>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">In flutter,It uses SQLite local database.In web app,it uses NoSQL Mongodb database.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">In Web App,the project has been integrated with open auth authencation with google and facebook and also local authentication.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">In flutter app, concept of state management is used because the data has to be accessed across different stages of the app.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Tools/Library: Flutter, Provider, Passport, SQlite,NoSQL.</li>
-           
-            </ul>
-          <a class="btn btn-dark me-3" href="https://todolistauth.onrender.com" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">Web App
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-          <a class="btn btn-dark" href="https://github.com/sheikh-haji/ToDoListFlutter" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">Flutter App
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
-      </div>
-
-      
-     
-
-      <!-- <hr> -->
-      <!-- <div class="row">
-        <div class="col-md-12 ">
-          <h3 class="temp10">Smart DustBin</h3>
-          <p style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">The goal of this project was to lift the lid of the dustbin whenever a obstacle is detected.</p>
-          <ul>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">It uses Arduino,Servo Motor,Ultrasonic Motion Sensor and Embedded C Programming.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Whenever a object within a threshold distance is detected the lid of the dustbin opens up.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">The obstacle is detected by Ultrasonic motion sensor and the lid is lifted up by servo motor.</li>
-            </ul>
-          <a class="btn btn-dark me-3" href="https://github.com/sheikh-haji/Smart-Dustbin" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">  View Project
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-
-        </div>
-      </div> -->
-
-      <hr>
-
-      <div class="row">
-        <div class="col-md-12 ">
-          <h3 class="temp10"  style="font:Oswald;">Stimulation Of Dijkstra Algorithm</h3>
-          <p style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">The goal of this project was stimulate algorithm using opencv and C++</p>
-          <ul>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">OpenCV processes the given rectangular maze and converts it to a Graph.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Dijkstra Algorithm is then applied to the processed Graph.</li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Then shortest path between the source and destination is stimulated and shown. </li>
-            <li style="font-family:Source Sans Pro;font-size:1.2rem;color:white;">Tools/Library: Opencv, Dijstra algoritham, C++.</li>
-            
-          </ul>
-          <a class="btn btn-dark me-3" href="https://github.com/sheikh-haji/Simulation-of-Dijstra-Algorithm" target="_blank" style="font-family:Pacifico;font-size:1.2rem;" onclick="func(event)">  View Project
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-
-        </div>
-      </div>
-
-
-
-
-
+    <div class="mb-3">
+      <a class="btn btn-light me-2 mb-1" href="https://drive.google.com/file/d/1mgOflyyIVbu52Qp6hHWDT3TctHBY-P6H/view?usp=sharing" target="_blank">Video Phase - 1</a>
+      <a class="btn btn-light me-2 mb-1" href="https://drive.google.com/file/d/1ThNG4iTGx-XgDaTufIEYpL3P1Owg22_F/view?usp=sharing" target="_blank">Video Phase - 2</a>
+      <a class="btn btn-light me-2 mb-1" href="https://docs.google.com/presentation/d/16RJiH9pSs9ZRVMx1HY0ivbhfVsyKckyK/edit?usp=sharing&ouid=111817135641183278437&rtpof=true&sd=true" target="_blank">Results</a>
+      <a class="btn btn-light me-2 mb-1" href="https://drive.google.com/file/d/1-DTk-59CWJmUDOEMiL-wlHFNniX52v79/view?usp=sharing" target="_blank">Report 1</a>
+      <a class="btn btn-light me-2 mb-1" href="https://drive.google.com/file/d/1lNfiRLq9I3i7aQwV4JdxVszayO0hxrhj/view?usp=sharing" target="_blank">Report 2</a>
     </div>
+
+    <!-- Tech stack icons -->
+    <div class="d-flex justify-content-end gap-3 mt-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" title="TensorFlow" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras" title="Keras" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" title="Pandas" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" title="NumPy" width="30" height="30">
+    </div>
+  </div>
+</div>
+
+    <div class="card mb-4 bg-dark text-white border-light" data-aos="flip-down" data-aos-duration="2000">
+  <div class="card-body" >
+    <h3 class="card-title" style="font-family:Oswald;">
+      Resume Assistant: Intelligent Chatbot for Resume Queries
+    </h3>
+    <p class="card-text" style="font-family:Source Sans Pro; font-size:1.2rem;">
+      Resume-Based Chatbot with Custom Question Answering: GPT vs Palm vs T5 vs BERT Performance Evaluation
+    </p>
+    <ul>
+      <li>Created a chatbot that answers resume-related questions through a web application.</li>
+      <li>Assessed custom question-answering capabilities, where GPT produced more natural responses than BERT, 
+          with GPT showing a 10% improvement in response relevance.</li>
+      <li>Tools/Library - LLM/Transformers, Streamlit, LangChain, Embeddings, Vector Databases, Semantic Search, PDFPlumber.</li>
+    </ul>
+
+    <div class="mb-3">
+      <a class="btn btn-light me-2 mb-1" href="https://github.com/sheikh-haji/RTS/" target="_blank">CODE Open AI</a>
+      <a class="btn btn-light me-2 mb-1" href="https://drive.google.com/file/d/1N9sBTF1lVRhSgz36j7xLWuLh8w0S73SP/view?usp=sharing" target="_blank">Video BERT</a>
+      <a class="btn btn-light me-2 mb-1" href="https://drive.google.com/file/d/1zRBhxMaIocnPlmNRjEHQ9pNa39L88Pgt/view?usp=sharing" target="_blank">Video Open AI</a>
+    </div>
+
+    <!-- Tech stack icons -->
+    <div class="d-flex justify-content-end gap-3 mt-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" alt="Streamlit" title="Streamlit" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" title="TensorFlow" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" title="PyTorch" width="30" height="30">
+    </div>
+  </div>
+</div>
+
+<div class="card mb-4 bg-dark text-white border-light" data-aos="flip-down" data-aos-duration="2000">
+  <div class="card-body">
+    <h3 class="card-title" style="font-family:Oswald;">
+      React Projects: To-do List and Blog App | 🔴Live
+    </h3>
+    <p class="card-text" style="font-family:Source Sans Pro; font-size:1.2rem;">
+      Learned concepts of React such as components, React hooks, how to create custom hooks, routing, and React context.
+    </p>
+    <ul style="font-family:Source Sans Pro; font-size:1.2rem;">
+      <li>To-do list app is a simple daily activity tracker; there is no reloading in the app due to use of React hooks and live deployment.</li>
+      <li>Blog app lets you create, read, and edit posts – functioning like a basic blog website.</li>
+      <li>Tools/Library - React, Mock API, Fake API Server</li>
+    </ul>
+
+    <div class="mb-3">
+      <a class="btn btn-light me-2 mb-1" href="https://to-do-list-react-xi-fawn.vercel.app/" target="_blank">Todolist</a>
+      <a class="btn btn-light me-2 mb-1" href="https://react-social-media-app-ten.vercel.app/" target="_blank">Blog Website</a>
+    </div>
+
+    <!-- Tech stack icons -->
+    <div class="d-flex justify-content-end gap-3 mt-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Fake API Server" title="Fake API Server" width="30" height="30">
+    </div>
+  </div>
+</div>
+<div class="card mb-4 bg-dark text-white border-light" data-aos="flip-down" data-aos-duration="2000">
+  <div class="card-body">
+    <h3 class="card-title" style="font-family:Oswald;">
+      Smart Healthcare: Disease Classification and Hospital Locator Web Application
+    </h3>
+    <p class="card-text" style="font-family:Source Sans Pro; font-size:1.2rem;">
+      To classify disease based on the symptoms given by the user and find the nearest hospital from the user's location.
+    </p>
+    <ul style="font-family:Source Sans Pro; font-size:1.2rem;">
+      <li>Designed a web application that classifies diseases using Naive Bayes, Decision Tree, and SVM models, achieving 95.6% accuracy.</li>
+      <li>Integrated OLA Maps, OpenWeather, and Places APIs to locate the nearest hospital, improving accessibility by 5%.</li>
+      <li>Provided remedies for diagnosed diseases and stored them in a NoSQL database with 42 efficient records.</li>
+      <li>Tools/Library – Geolocator API, Flask, sklearn, OLA Maps, OpenWeather API, NoSQL Database</li>
+    </ul>
+
+    <div class="mb-3">
+      <a class="btn btn-light me-2 mb-1" href="https://github.com/sheikh-haji/Disease-Classification-Using-ML-Model" target="_blank">View Project</a>
+      <a class="btn btn-light me-2 mb-1" href="http://mlandlocation.work.gd/" target="_blank">Webapp</a>
+    </div>
+
+    <!-- Tech stack icons -->
+    <div class="d-flex justify-content-end gap-3 mt-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" title="Flask" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="NoSQL DB" title="MongoDB" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="APIs" title="APIs" width="30" height="30">
+    </div>
+  </div>
+</div>
+<div class="card mb-4 bg-dark text-white border-light" data-aos="flip-down" data-aos-duration="2000">
+  <div class="card-body" >
+    <h3 class="card-title" style="font-family:Oswald;">
+      Real-Time Weather Tracker: Cross-Platform Application Using Flutter | 🔴Live
+    </h3>
+    <p class="card-text" style="font-family:Source Sans Pro; font-size:1.2rem;">
+      A mobile and web application to fetch real-time weather data using the OpenWeatherMap API.
+    </p>
+    <ul style="font-family:Source Sans Pro; font-size:1.2rem;">
+      <li>Developed using Flutter for cross-platform compatibility with weather data retrieval via OpenWeatherMap API.</li>
+      <li>Utilized Mapbox API for location input, enabling both current and custom location searches.</li>
+      <li>Implemented asynchronous programming to enhance performance, reducing data fetch time by an average of 2 seconds.</li>
+      <li>Tools/Library: Flutter, OpenWeatherMap API, Mapbox API, Asynchronous Programming</li>
+    </ul>
+
+    <div class="mb-3">
+      <a class="btn btn-light me-2 mb-1" href="https://weather-x9uf.onrender.com" target="_blank">Web App</a>
+      <a class="btn btn-light mb-1" href="https://github.com/sheikh-haji/Weather-App-flutter" target="_blank">Flutter App</a>
+    </div>
+
+    <!-- Tech stack icons -->
+    <div class="d-flex justify-content-end gap-3 mt-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" title="Flutter" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" title="Dart" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="OpenWeatherMap" title="OpenWeatherMap API" width="30" height="30">
+       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Fake API Server" title="Fake API Server" width="30" height="30">
+    </div>
+  </div>
+</div>
+<div class="card mb-4 bg-dark text-white border-light" data-aos="flip-down" data-aos-duration="2000">
+  <div class="card-body">
+    <h3 class="card-title" style="font-family:Oswald;">
+      To-Do List App with Secure Authentication | 🔴Live
+    </h3>
+    <p class="card-text" style="font-family:Source Sans Pro; font-size:1.2rem;">
+      A simple cross-platform to-do list app built to explore secure authentication and database integration using Flutter and Web technologies.
+    </p>
+    <ul style="font-family:Source Sans Pro; font-size:1.2rem;">
+      <li>Flutter version uses SQLite for local data persistence; the web version uses MongoDB (NoSQL) for backend storage.</li>
+      <li>Integrated Google, Facebook, and local authentication in the web app using Passport.js for secure user login.</li>
+      <li>Implemented state management using Provider in the Flutter app to share data across widgets efficiently.</li>
+      <li>Tools/Library: Flutter, Provider, Passport.js, SQLite, MongoDB (NoSQL)</li>
+    </ul>
+
+    <div class="mb-3">
+      <a class="btn btn-light me-2 mb-1" href="https://todolistauth.onrender.com" target="_blank">Web App</a>
+      <a class="btn btn-light mb-1" href="https://github.com/sheikh-haji/ToDoListFlutter" target="_blank">Flutter App</a>
+    </div>
+
+    <!-- Tech stack icons -->
+    <div class="d-flex justify-content-end gap-3 mt-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" title="Flutter" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" title="Dart" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" title="MongoDB" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" title="SQLite" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Passport.js" title="Passport.js" width="30" height="30">
+    </div>
+  </div>
+</div>
+
+<div class="card mb-4 bg-dark text-white border-light" data-aos="flip-down" data-aos-duration="2000">
+  <div class="card-body">
+    <h3 class="card-title" style="font-family:Oswald;">
+      Simulation of Dijkstra Algorithm
+    </h3>
+    <p class="card-text" style="font-family:Source Sans Pro; font-size:1.2rem;">
+      A visual simulation of Dijkstra's algorithm using OpenCV and C++ to find the shortest path in a maze represented as a graph.
+    </p>
+    <ul style="font-family:Source Sans Pro; font-size:1.2rem;">
+      <li>Processed a rectangular maze image using OpenCV and converted it into a graph representation.</li>
+      <li>Applied Dijkstra's algorithm to compute the shortest path from source to destination within the maze.</li>
+      <li>Visualized the computed shortest path over the original maze using OpenCV drawing utilities.</li>
+      <li>Tools/Library: OpenCV, Dijkstra Algorithm, C++</li>
+    </ul>
+
+    <div class="mb-3">
+      <a class="btn btn-light me-2 mb-1" href="https://github.com/sheikh-haji/Simulation-of-Dijstra-Algorithm" target="_blank">View Project</a>
+    </div>
+
+    <!-- Tech stack icons -->
+    <div class="d-flex justify-content-end gap-3 mt-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++" width="30" height="30">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" title="OpenCV" width="30" height="30">
+      <img src="https://img.icons8.com/ios/50/FFFFFF/graph.png" alt="Graph Theory" title="Graph Theory" width="30" height="30">
+    </div>
+  </div>
+</div>
+
+
+  </div>
+  
+  
 </section>
+
 <section id="experience">
   <div class="container temp8">
     <!-- <h1 class="temp9" style="font-family:Vina Sans;font-weight:normal;">Achivements</h1>
