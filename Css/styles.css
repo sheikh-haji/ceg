@@ -356,10 +356,165 @@ h1{
 }
 #education{
   background-color: #6aa84f;
-    
-
-
+  padding: 4% 0 5%;
 }
+
+#experience{
+  background: linear-gradient(180deg, #f7f9fc 0%, #eef3ff 100%);
+  padding: 4% 0 5%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-heading .eyebrow {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4d5d7a;
+  margin-bottom: 0.6rem;
+}
+
+.section-heading h1 {
+  font-family: "Vina Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.timeline {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 1.2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #1d3557 0%, #6aa84f 100%);
+  border-radius: 999px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 1.2rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #1d3557;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 3px rgba(29, 53, 87, 0.15);
+}
+
+.timeline-card, .edu-card {
+  background: #fff;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+.timeline-card .card-header,
+.edu-card .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #101827;
+  color: #fff;
+  padding: 1rem 1.25rem;
+}
+
+.timeline-card .card-header h3,
+.edu-card .card-header h3 {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.timeline-card .card-header span,
+.edu-card .card-header span {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.timeline-card .card-body,
+.edu-card .card-body {
+  padding: 1.25rem 1.4rem 1.1rem;
+}
+
+.timeline-card ul,
+.edu-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #1f2937;
+}
+
+.timeline-card a,
+.edu-card a {
+  color: #0d3b66;
+  text-decoration: underline;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.timeline-card a:hover,
+.edu-card a:hover {
+  color: #08315a;
+}
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.edu-card {
+  height: 100%;
+}
+
+.edu-card .card-header {
+  min-height: 76px;
+}
+
+.edu-card .card-header h3 {
+  font-size: 1.35rem;
+}
+
+.edu-card .card-body li {
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 991px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .temp5{
   font-family: "Pacifico";
   font-size: 2rem;
